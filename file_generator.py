@@ -59,7 +59,7 @@ def create_project_structure(base_path, config, templates):
     # Create dependencies installation script
     create_dependencies_script(project_path, config)
 
-def create_dependencies_script(project_path, config):
+def create_dependencies_script(project_path, config): #This does not work it is hardcoded should not be!
     """Generate a shell script to install dependencies."""
     install_script_path = os.path.join(project_path, "install_dependencies.sh")
     with open(install_script_path, 'w') as f:
