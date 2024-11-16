@@ -1,0 +1,15 @@
+{
+    "backend": {
+      "Flask": "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef home():\n    return 'Welcome to {project_name}!'\n\nif __name__ == '__main__':\n    app.run(debug=True)\n",
+      "Django": "# Django projects require additional setup (this is a placeholder example)\n# Run: django-admin startproject {project_name}\n"
+    },
+    "frontend": {
+      "React": "import React from 'react';\nimport ReactDOM from 'react-dom';\n\nfunction App() {{\n    return <h1>Welcome to {{project_name}}!</h1>;\n}}\n\nReactDOM.render(<App />, document.getElementById('root'));\n",
+      "Angular": "// Angular projects require CLI scaffolding (this is a placeholder example)\n// Run: ng new {project_name}\n"
+    },
+    "database": {
+      "PostgreSQL": "CREATE TABLE users (id SERIAL PRIMARY KEY, name TEXT);",
+      "MySQL": "CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY, name VARCHAR(255));"
+    }
+  }
+  

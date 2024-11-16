@@ -1,0 +1,20 @@
+{
+    "project_name": "MyCoolApp",
+    "backend": {
+      "framework": "Flask",
+      "dependencies": ["flask", "flask_sqlalchemy"]
+    },
+    "frontend": {
+      "framework": "React",
+      "dependencies": ["react", "react-dom"]
+    },
+    "database": {
+      "type": "PostgreSQL",
+      "schema": "CREATE TABLE users (id SERIAL PRIMARY KEY, name TEXT);"
+    },
+    "shared_parameters": {
+      "api_url": "http://localhost:5000",
+      "db_name": "my_cool_app_db"
+    }
+  }
+  
